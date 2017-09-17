@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>招聘管理系统</title>
+	<link href="https://magicbox.bkclouds.cc/static_api/v3/assets/bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://magicbox.bkclouds.cc/static_api/v3/assets/bk-icon-2.0/iconfont.css" rel="stylesheet">   
+	<link href="https://magicbox.bkclouds.cc/static_api/v3/bk/css/bk.css" rel="stylesheet">
+	<link href="https://magicbox.bkclouds.cc/static_api/v3/bk/css-pro/bk.css" rel="stylesheet">
+	<link href="https://magicbox.bkclouds.cc/static_api/v3/assets/switchery-master/dist/switchery.css" rel="stylesheet">
+	<link href="./css/common.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="bk-horz-nav11">
+    <div class="bk-nav-logo fl">
+        <img src="https://magicbox.bkclouds.cc/static_api/v3/bk/images/logo1.png">招聘管理系统
+    </div>
+    <div class="bk-nav-user fr">
+        <span class="mr5">admin</span>
+        <img src="https://magicbox.bkclouds.cc/static_api/v3/components_pro/horizontal_nav1/images/avatar.png">
+    </div>
+    <ul class="bk-nav-links fr">
+        <li>
+            <a href="index.html">首页</a>
+        </li>
+        <li class="active">
+            <a href="manager.html">项目管理</a>
+        </li>
+        <li>
+            <a href="data_manage.html">数据管理</a>
+        </li>
+        <li class="bk-has-submenu">
+            <a href="javascript:;">系统配置</a>
+            <ul class="bk-submenu">
+                <li>
+                    <a href="city_manage.html">配置城市</a>
+                </li>
+                <li>
+                    <a href="auth_manage.html">配置部门</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+
+<div class="page-content">
+	<div class="page-content-wrapper" style="width: 100%;">		
+		<div class="bk-panel bk-panel-title-btns">
+		    <div class="bk-panel-header" role="tab">
+		        <div class="panel-title">项目管理</div>
+		        <div class="panel-btns">
+		            <a href="javascript:;" role="button" class="bk-button bk-success bk-button-small" title="保存">
+		                <i class="bk-icon icon-plus mr5"></i>
+		                新建项目
+		            </a>
+		        </div>
+		    </div>
+		    <div class="bk-panel-body" style="padding: 0;">
+		    	<table class="bk-table has-thead-bordered">
+			        <thead>
+			            <tr>
+			                <th>年份</th>
+			                <th>项目名称</th>
+			                <th>类型</th>
+			                <th>状态</th>
+			                <th style="width: 250px;">操作</th>
+			            </tr>
+			        </thead>
+			        <tbody>
+			        	<tr>
+			        		<td>2017</td>
+			        		<td>2017秋季校园招聘</td>
+			        		<td>毕业生招聘</td>
+			        		<td class="state">
+			        			<div class="switchery_box" id="switchery_demo5">
+								    
+								    <input type="checkbox" class="js-switch-small">
+								    
+								</div>
+			        		</td>
+			        		<td>
+			        			<a href="javascript:;" class="bk-text-button">克隆</a>
+			                    <a href="javascript:;" class="bk-text-button">编辑</a>
+			                    <a href="javascript:;" class="bk-text-button">详情</a>
+			                    <!-- <a href="javascript:;" class="bk-text-button active">激活</a> -->
+			                    
+			        		</td>
+			        	</tr>
+			            <tr>
+			        		<td>2017</td>
+			        		<td>2017夏季校园招聘</td>
+			        		<td>毕业生招聘</td>
+			        		<td class="state">
+			        			<div class="switchery_box" id="switchery_demo5">
+								    
+								    <input type="checkbox" class="js-switch-small" checked="checked">
+								    
+								</div>
+			        		</td>
+			        		<td>
+			        			<a href="javascript:;" class="bk-text-button">克隆</a>
+			                    <a href="javascript:;" class="bk-text-button">编辑</a>
+			                    <a href="javascript:;" class="bk-text-button">详情</a>
+			                    <!-- <a href="javascript:;" class="bk-text-button active">激活</a> -->
+			                    
+			        		</td>
+			        	</tr>
+			        	<tr>
+			        		<td>2017</td>
+			        		<td>2017春季校园招聘</td>
+			        		<td>实习生招聘</td>
+			        		<td class="state">
+			        			<div class="switchery_box" id="switchery_demo5">    
+								    <input type="checkbox" class="js-switch-small">								    
+								</div>
+			        		</td>
+			        		<td>
+			        			<a href="javascript:;" class="bk-text-button">克隆</a>
+			                    <a href="javascript:;" class="bk-text-button">编辑</a>
+			                    <a href="javascript:;" class="bk-text-button">详情</a>			                  
+			        		</td>
+			        	</tr>
+			        	<tr>
+			        		<td>2016</td>
+			        		<td>2016秋季校园招聘</td>
+			        		<td>毕业生招聘</td>
+			        		<td class="state">
+			        			<div class="switchery_box" id="switchery_demo5">
+								    <input type="checkbox" class="js-switch-small" checked="checked">			    
+								</div>
+			        		</td>
+			        		<td>
+			        			<a href="javascript:;" class="bk-text-button">克隆</a>
+			                    <a href="javascript:;" class="bk-text-button">编辑</a>
+			                    <a href="javascript:;" class="bk-text-button">详情</a>			                  
+			        		</td>
+			        	</tr>
+			        	<tr>
+			        		<td>2016</td>
+			        		<td>2016春季校园招聘</td>
+			        		<td>实习生招聘</td>
+			        		<td class="state">
+			        			<div class="switchery_box" id="switchery_demo5">								    
+								    <input type="checkbox" class="js-switch-small" checked="checked">    
+								</div>
+			        		</td>
+			        		<td>
+			        			<a href="javascript:;" class="bk-text-button">克隆</a>
+			                    <a href="javascript:;" class="bk-text-button">编辑</a>
+			                    <a href="javascript:;" class="bk-text-button">详情</a>			           
+			        		</td>
+			        	</tr>
+			            <tr>
+			        		<td>2015</td>
+			        		<td>2015秋季校园招聘</td>
+			        		<td>毕业生招聘</td>
+			        		<td class="state">
+			        			<div class="switchery_box" id="switchery_demo5">								    
+								    <input type="checkbox" class="js-switch-small" checked="checked">   
+								</div>
+			        		</td>
+			        		<td>
+			        			<a href="javascript:;" class="bk-text-button">克隆</a>
+			                    <a href="javascript:;" class="bk-text-button">编辑</a>
+			                    <a href="javascript:;" class="bk-text-button">详情</a>
+			        		</td>
+			        	</tr>
+			        	<tr>
+			        		<td>2015</td>
+			        		<td>2015春季校园招聘</td>
+			        		<td>实习生招聘</td>
+			        		<td class="state">
+			        			<div class="switchery_box" id="switchery_demo5">    
+								    <input type="checkbox" class="js-switch-small" checked="checked">    
+								</div>
+			        		</td>
+			        		<td>
+			        			<a href="javascript:;" class="bk-text-button">克隆</a>
+			                    <a href="javascript:;" class="bk-text-button">编辑</a>
+			                    <a href="javascript:;" class="bk-text-button">详情</a>       
+			        		</td>
+			        	</tr>
+			        	<tr>
+			        		<td>2014</td>
+			        		<td>2014春季校园招聘</td>
+			        		<td>实习生招聘</td>
+			        		<td class="state">
+			        			<div class="switchery_box" id="switchery_demo5">
+								    <input type="checkbox" class="js-switch-small" checked="checked">   
+								</div>
+			        		</td>
+			        		<td>
+			        			<a href="javascript:;" class="bk-text-button">克隆</a>
+			                    <a href="javascript:;" class="bk-text-button">编辑</a>
+			                    <a href="javascript:;" class="bk-text-button">详情</a>			                    
+			        		</td>
+			        	</tr>
+			        </tbody>
+		    	</table>
+		    </div>
+	    </div>
+    </div>
+</div>		
+
+<footer class="footer">
+    <div class="footer-links">
+        <ul>
+            <li>
+                <a href="###">QQ咨询</a>
+            </li>
+            <li>
+                <a href="###">蓝鲸论坛</a>
+            </li>
+            <li>
+                <a href="###">蓝鲸官网</a>
+            </li>
+            <li>
+                <a href="###">蓝鲸智云工作台</a>
+            </li>
+        </ul>
+    </div>
+    <p class="footer-copyright">
+        Copyright &copy; 2012-2017 Tencent BlueKing. All Rights Reserved.  蓝鲸智云 版权所有
+    </p>
+</footer>
+
+<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/switchery-master/dist/switchery.js"></script>
+<script src="./js/manager.js"></script>
+</body>
+</html>

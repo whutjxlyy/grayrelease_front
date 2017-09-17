@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>招聘管理系统</title>
+	<link href="https://magicbox.bkclouds.cc/static_api/v3/assets/bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://magicbox.bkclouds.cc/static_api/v3/assets/bk-icon-2.0/iconfont.css" rel="stylesheet">
+	<link href="https://magicbox.bkclouds.cc/static_api/v3/bk/css/bk.css" rel="stylesheet">
+	<link href="https://magicbox.bkclouds.cc/static_api/v3/bk/css-pro/bk.css" rel="stylesheet">
+    <link href="./css/common.css" rel="stylesheet">
+    <style>
+        .bk-panel .bk-panel-body > .bk-table.has-thead-bordered > tbody > tr:first-child > td, 
+        .bk-panel .bk-panel-body > .bk-table.table-bordered > tbody > tr:first-child > td {
+            border-top: none;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="bk-horz-nav11">
+    <div class="bk-nav-logo fl">
+        <img src="https://magicbox.bkclouds.cc/static_api/v3/bk/images/logo1.png">招聘管理系统
+    </div>
+    <div class="bk-nav-user fr">
+        <span class="mr5">admin</span>
+        <img src="https://magicbox.bkclouds.cc/static_api/v3/components_pro/horizontal_nav1/images/avatar.png">
+    </div>
+    <ul class="bk-nav-links fr">
+        <li class="active">
+            <a href="index.html">首页</a>
+        </li>
+        <li>
+            <a href="manager.html">项目管理</a>
+        </li>
+        <li>
+            <a href="data_manage.html">数据管理</a>
+        </li>
+        <li class="bk-has-submenu">
+            <a href="javascript:;">系统配置</a>
+            <ul class="bk-submenu">
+                <li>
+                    <a href="city_manage.html">配置城市</a>
+                </li>
+                <li>
+                    <a href="auth_manage.html">配置部门</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<div class="page-content">
+    <div class="page-content-wrapper">
+    	<div class="bk-panel bk-panel-title-btns">
+            <div class="bk-panel-header" role="tab">
+                <div class="panel-title">2017年度校招时间表</div>
+                <div class="panel-btns">
+                    <a href="javascript:;" role="button" class="bk-button bk-default bk-button-small" id="all" data-all="expand">全部展开
+                    </a>
+                    <a href="submit.html" role="button" class="bk-button bk-success bk-button-small" title="提报需求" id="demand">
+                        <i class="bk-icon icon-plus mr5"></i>提报需求
+                    </a>
+                </div>
+            </div>
+            <div class="bk-panel-body">
+                <table class="bk-table has-thead-bordered">
+                    <tbody>
+                        <tr>
+                            <td colspan="11" class="p0">
+                                <div class="bk-collapse-panel">
+                                    <div class="panel-header" role="tab">
+                                        <a role="button" data-toggle="collapse" href="#panel-content1" class="panel-icon panel-spread" aria-expanded="false">
+                                        </a>
+                                        <h3 class="panel-title" data-toggle="collapse" href="#panel-content1" >第一批次</h3>
+                                    </div>
+                                    <div id="panel-content1" class="panel-body panel-collapse collapse in p0">
+                                        <table class="bk-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>线路</th>
+                                                    <th>简历截止</th>
+                                                    <th>线上笔试</th>
+                                                    <th>需求修改</th>
+                                                    <th>分简历</th>
+                                                    <th>面试通知</th>
+                                                    <th>初试</th>
+                                                    <th>复试</th>
+                                                    <th>HR</th>
+                                                    <th>录用</th>
+                                                    <th>签约</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>深圳</td>
+                                                    <td>09.04</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>深圳</td>
+                                                    <td>09.04</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>深圳</td>
+                                                    <td>09.04</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>深圳</td>
+                                                    <td>09.04</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="11" class="p0">
+                                <div class="bk-collapse-panel">
+                                    <div class="panel-header" role="tab">
+                                        <a role="button" data-toggle="collapse" href="#panel-content2" class="panel-icon collapsed panel-spread"></a>
+                                        <h3 class="panel-title" data-toggle="collapse" href="#panel-content2">第二批次</h3>
+                                    </div>
+                                    <div id="panel-content2" class="panel-body panel-collapse collapse out p0">
+                                        <table class="bk-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>线路</th>
+                                                    <th>简历截止</th>
+                                                    <th>线上笔试</th>
+                                                    <th>需求修改</th>
+                                                    <th>分简历</th>
+                                                    <th>面试通知</th>
+                                                    <th>初试</th>
+                                                    <th>复试</th>
+                                                    <th>HR</th>
+                                                    <th>录用</th>
+                                                    <th>签约</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>深圳</td>
+                                                    <td>09.04</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="11" class="p0">
+                                <div class="bk-collapse-panel">
+                                    <div class="panel-header" role="tab">
+                                        <a role="button" data-toggle="collapse" href="#panel-content3" class="panel-icon collapsed panel-spread"></a>
+                                        <h3 class="panel-title" data-toggle="collapse" href="#panel-content3">游戏美术专线（游戏美术类）</h3>
+                                    </div>
+                                    <div id="panel-content3" class="panel-body panel-collapse collapse out p0">
+                                        <table class="bk-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>线路</th>
+                                                    <th>简历截止</th>
+                                                    <th>线上笔试</th>
+                                                    <th>需求修改</th>
+                                                    <th>分简历</th>
+                                                    <th>面试通知</th>
+                                                    <th>初试</th>
+                                                    <th>复试</th>
+                                                    <th>HR</th>
+                                                    <th>录用</th>
+                                                    <th>签约</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>深圳</td>
+                                                    <td>09.04</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>乌鲁木齐</td>
+                                                    <td>09.04</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>广州</td>
+                                                    <td>09.04</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="11" class="p0">
+                                <div class="bk-collapse-panel">
+                                    <div class="panel-header" role="tab">
+                                        <a role="button" data-toggle="collapse" href="#panel-content4" class="panel-icon collapsed panel-spread"></a>
+                                        <h3 class="panel-title" data-toggle="collapse" href="#panel-content4">海外专线（1）</h3>
+                                    </div>
+                                    <div id="panel-content4" class="panel-body panel-collapse collapse out p0">
+                                        <table class="bk-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>线路</th>
+                                                    <th>简历截止</th>
+                                                    <th>线上笔试</th>
+                                                    <th>需求修改</th>
+                                                    <th>分简历</th>
+                                                    <th>面试通知</th>
+                                                    <th>初试</th>
+                                                    <th>复试</th>
+                                                    <th>HR</th>
+                                                    <th>录用</th>
+                                                    <th>签约</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>深圳</td>
+                                                    <td>09.04</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>乌鲁木齐</td>
+                                                    <td>09.04</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>广州</td>
+                                                    <td>09.04</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="11" class="p0">
+                                <div class="bk-collapse-panel">
+                                    <div class="panel-header" role="tab">
+                                        <a role="button" data-toggle="collapse" href="#panel-content5" class="panel-icon collapsed panel-spread"></a>
+                                        <h3 class="panel-title" data-toggle="collapse" href="#panel-content5">海外专线（2）</h3>
+                                    </div>
+                                    <div id="panel-content5" class="panel-body panel-collapse collapse out p0">
+                                        <table class="bk-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>线路</th>
+                                                    <th>简历截止</th>
+                                                    <th>线上笔试</th>
+                                                    <th>需求修改</th>
+                                                    <th>分简历</th>
+                                                    <th>面试通知</th>
+                                                    <th>初试</th>
+                                                    <th>复试</th>
+                                                    <th>HR</th>
+                                                    <th>录用</th>
+                                                    <th>签约</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>深圳</td>
+                                                    <td>09.04</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>乌鲁木齐</td>
+                                                    <td>09.04</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>广州</td>
+                                                    <td>09.04</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="11" class="p0">
+                                <div class="bk-collapse-panel">
+                                    <div class="panel-header" role="tab">
+                                        <a role="button" data-toggle="collapse" href="#panel-content6" class="panel-icon collapsed panel-spread"></a>
+                                        <h3 class="panel-title" data-toggle="collapse" href="#panel-content6">海外专线（3）</h3>
+                                    </div>
+                                    <div id="panel-content6" class="panel-body panel-collapse collapse out p0">
+                                        <table class="bk-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>线路</th>
+                                                    <th>简历截止</th>
+                                                    <th>线上笔试</th>
+                                                    <th>需求修改</th>
+                                                    <th>分简历</th>
+                                                    <th>面试通知</th>
+                                                    <th>初试</th>
+                                                    <th>复试</th>
+                                                    <th>HR</th>
+                                                    <th>录用</th>
+                                                    <th>签约</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>深圳</td>
+                                                    <td>09.04</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>乌鲁木齐</td>
+                                                    <td>09.04</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>广州</td>
+                                                    <td>09.04</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="11" class="p0">
+                                <div class="bk-collapse-panel">
+                                    <div class="panel-header" role="tab">
+                                        <a role="button" data-toggle="collapse" href="#panel-content7" class="panel-icon collapsed panel-spread"></a>
+                                        <h3 class="panel-title" data-toggle="collapse" href="#panel-content7">海外专线（4）</h3>
+                                    </div>
+                                    <div id="panel-content7" class="panel-body panel-collapse collapse out p0">
+                                        <table class="bk-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>线路</th>
+                                                    <th>简历截止</th>
+                                                    <th>线上笔试</th>
+                                                    <th>需求修改</th>
+                                                    <th>分简历</th>
+                                                    <th>面试通知</th>
+                                                    <th>初试</th>
+                                                    <th>复试</th>
+                                                    <th>HR</th>
+                                                    <th>录用</th>
+                                                    <th>签约</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>深圳</td>
+                                                    <td>09.04</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>乌鲁木齐</td>
+                                                    <td>09.04</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>广州</td>
+                                                    <td>09.04</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                    <td>09.05~09.07</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- 空数据样式 -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="bk-panel-footer"></div>
+        </div>		
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-links">
+        <ul>
+            <li>
+                <a href="###">QQ咨询</a>
+            </li>
+            <li>
+                <a href="###">蓝鲸论坛</a>
+            </li>
+            <li>
+                <a href="###">蓝鲸官网</a>
+            </li>
+            <li>
+                <a href="###">蓝鲸智云工作台</a>
+            </li>
+        </ul>
+    </div>
+    <p class="footer-copyright">
+        Copyright &copy; 2012-2017 Tencent BlueKing. All Rights Reserved.  蓝鲸智云 版权所有
+    </p>
+</footer>
+<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+<script src="./js/home.js"></script>
+</body>
+</html>

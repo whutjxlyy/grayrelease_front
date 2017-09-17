@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>招聘管理系统</title>
+	<link href="https://magicbox.bkclouds.cc/static_api/v3/assets/bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet">	
+	<link href="https://magicbox.bkclouds.cc/static_api/v3/assets/bk-icon-2.0/iconfont.css" rel="stylesheet">
+	<link href="https://magicbox.bkclouds.cc/static_api/v3/bk/css/bk.css" rel="stylesheet">
+	<link href="https://magicbox.bkclouds.cc/static_api/v3/bk/css-pro/bk.css" rel="stylesheet">
+    <link href="./css/common.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="bk-horz-nav11">
+    <div class="bk-nav-logo fl">
+        <img src="https://magicbox.bkclouds.cc/static_api/v3/bk/images/logo1.png">招聘管理系统
+    </div>
+    <div class="bk-nav-user fr">
+        <span class="mr5">admin</span>
+        <img src="https://magicbox.bkclouds.cc/static_api/v3/components_pro/horizontal_nav1/images/avatar.png">
+    </div>
+    <ul class="bk-nav-links fr">
+        <li>
+            <a href="index.html">首页</a>
+        </li>
+        <li>
+            <a href="manager.html">项目管理</a>
+        </li>
+        <li class="bk-has-submenu active">
+            <a href="javascript:;">系统配置</a>
+            <ul class="bk-submenu">
+                <li>
+                    <a href="city_manage.html">配置城市</a>
+                </li>
+                <li>
+                    <a href="auth_manage.html">配置部门</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<div class="page-content">
+    <div class="page-content-wrapper">
+        <div class="bk-panel bk-panel-title-btns">
+            <div class="bk-panel-header" role="tab">
+                <div class="panel-title">工作城市管理</div>
+                <div class="panel-btns">
+                    <a href="javascript:;" role="button" class="bk-button bk-success bk-button-small" title="新增用户权限" id="add_city">
+                        <i class="bk-icon icon-plus mr5"></i>新增工作城市
+                    </a>
+                </div>
+            </div>
+            <div class="bk-panel-body">
+                <table class="bk-table has-thead-bordered">
+                    <thead>
+                        <tr>
+                            <th>城市名</th>
+                            <th style="width:400px;">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>北京</td>
+                            <td>
+                                <a href="javascript:;" class="text-primary mr10">编辑</a>
+                                <a href="javascript:;" class="text-danger">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>上海</td>
+                            <td>
+                                <a href="javascript:;" class="text-primary mr10">编辑</a>
+                                <a href="javascript:;" class="text-danger">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>广州</td>
+                            <td>
+                                <a href="javascript:;" class="text-primary mr10">编辑</a>
+                                <a href="javascript:;" class="text-danger">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>深圳</td>
+                            <td>
+                                <a href="javascript:;" class="text-primary mr10">编辑</a>
+                                <a href="javascript:;" class="text-danger">删除</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bk-panel-footer"></div>
+        </div>
+    </div>	
+</div>
+
+<div class="bk-mask interview_mask" id="bk_mask">
+    <div class="bk-mask-content" id="bk_mask_content">
+        <div class="bk-mask-title">
+            <i class="bk-icon icon-angle-right" id="close"></i>
+            <span>新增工作城市</span>
+        </div>
+        <div class="bk-mask-body">
+            <p class="sub-title">城市</p>
+            <form class="bk-form" id="add_city_form">
+                <div class="bk-form-item">
+                    <label class="bk-label" style="width:150px;">工作城市</label>
+                    <div class="bk-form-content" style="margin-left:150px;">
+                        <input type="text" class="bk-form-input" placeholder="请输入城市名">
+                    </div>
+                </div>
+                <div class="bk-form-item">
+                    <div class="bk-form-content" style="margin-left:150px;">
+                        <button type="button" class="bk-button bk-primary" title="保存" id="save">保存</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-links">
+        <ul>
+            <li>
+                <a href="###">QQ咨询</a>
+            </li>
+            <li>
+                <a href="###">蓝鲸论坛</a>
+            </li>
+            <li>
+                <a href="###">蓝鲸官网</a>
+            </li>
+            <li>
+                <a href="###">蓝鲸智云工作台</a>
+            </li>
+        </ul>
+    </div>
+    <p class="footer-copyright">
+        Copyright &copy; 2012-2017 Tencent BlueKing. All Rights Reserved.  蓝鲸智云 版权所有
+    </p>
+</footer>
+<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/info_manage.js"></script>
+<script src="./js/city_manage.js"></script>
+</body>
+</html>
