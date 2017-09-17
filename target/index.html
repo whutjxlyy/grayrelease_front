@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link href="https://magicbox.bkclouds.cc/static_api/v3/assets/bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet">	
+	<link href="https://magicbox.bkclouds.cc/static_api/v3/assets/bk-icon-2.0/iconfont.css" rel="stylesheet">
+	<link href="https://magicbox.bkclouds.cc/static_api/v3/bk/css/bk.css" rel="stylesheet">
+	<link href="https://magicbox.bkclouds.cc/static_api/v3/bk/css-pro/bk.css" rel="stylesheet">
+    <link href="./css/common.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+	
+	<!-- 下拉多选框 -->
+	<link href="https://magicbox.bkclouds.cc/static_api/v3/assets/select2-3.5.2/select2.css" rel="stylesheet">
+	<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+	<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/select2-3.5.2/select2.js"></script>
+</head>
+<body>
+
+<nav class="bk-horz-nav bk-horz-nav-min" style="background-color:#313541;">
+    <div class="bk-nav-logo fl">
+        <img src="https://magicbox.bkclouds.cc/static_api/v3/components_pro/horizontal_nav1/images/logo.png">
+    </div>
+    <div class="bk-nav-user fr">
+        <span class="mr5">admin</span>
+        <img src="https://magicbox.bkclouds.cc/static_api/v3/components_pro/horizontal_nav1/images/avatar.png">
+    </div>
+    <ul class="bk-nav-links fr">
+        <li class="bk-has-submenu" style="background-color:#313541;">
+            <a href="javascript:;">帮助</a>
+            <ul class="bk-submenu">
+                <li>
+                    <a href="javascript:;">文档1</a>
+                </li>
+                <li>
+                    <a href="javascript:;">文档2</a>
+                </li>
+                <li>
+                    <a href="javascript:;">文档3</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<div class="bk-layout bk-layout-has-sidebar" style="height:calc(100% - 60px)">
+    <div class="bk-sidebar slide-close">
+        <div class="slide-switch">
+            <i class="icon bk-icon icon-dedent f14"></i>
+        </div>
+        <div class="nav-list">
+            <ul>
+                <li class="pureLink open">
+                  <a href="index.html">
+                      <span class="icon-box">
+                        <i class="bk-icon icon-home"></i>
+                      </span>
+                      <span class="nav-name">灰度发布</span>
+                  </a>
+                </li>
+                <li class="pureLink">
+                  <a href="detail.html">
+                      <span class="icon-box">
+                        <i class="bk-icon icon-list"></i>
+                      </span>
+                      <span class="nav-name">操作审计</span>
+                  </a>
+                </li>
+                <li class="pureLink">
+                  <a href="tab.html">
+                      <span class="icon-box">
+                        <i class="bk-icon icon-line-chart"></i>
+                      </span>
+                      <span class="nav-name">数据统计</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                      <span class="icon-box">
+                        <i class="bk-icon icon-plus-square"></i>
+                      </span>
+                      <span class="nav-name">配置管理</span>
+                  </a>
+                  <div class="flex-subnavs">
+                      <a href="javascript:;"><i></i>服务配置</a>
+                      <a href="javascript:;"><i></i>用户配置</a>
+                  </div>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+           <p>Copyright &copy; 2012-2017 CloudDragon.</p> 
+           <span>All Rights Reserved.</span>
+        </div>
+    </div>
+
+    <div class="page-content">
+        <div class="bk-panel mb20">
+            <div class="bk-panel-body p25">
+            	<form class="bk-form">
+               	<div class="row">
+               		
+               		<div class="col-md-4 col-lg-4 col-xs-4">
+					    <div class="bk-form-item mb20">
+					        <label class="bk-label pr15" style="width:80px;">集群</label>
+					        <div class="bk-form-content" style="margin-left:80px;">
+					            <select name="" id="" class="bk-form-select" style="width:100%;" placeholder="请选择">
+					                <option value="">请选择</option>
+					                <option value="">dragon_gamma</option>
+					                <option value="">dragon_gamma_yellow</option>
+					                <option value="">dragon_product</option>
+					                <option value="">dragon_product_yellow</option>
+					            </select>
+					        </div>
+					    </div>
+					    <div class="bk-form-item mb20">
+					        <label class="bk-label pr15" style="width:80px;">服务类型</label>
+					        <div class="bk-form-content" style="margin-left:80px;">
+					            <select name="" id="" class="bk-form-select" style="width:100%;" placeholder="请选择">
+					                <option value="">请选择</option>
+					                <option value="">前台</option>
+					                <option value="">后台</option>
+					            </select>
+					        </div>
+					    </div>
+					    <div class="bk-form-item">
+					        <label class="bk-label pr15" style="width:80px;">IP</label>
+							<div class="plugin3_demo" id="plugin3_demo4" style="display:inline-block;">
+								<!-- select2 下拉选项可多选 start -->
+								<select multiple="true" class="select2_box" style="width:295px;">
+									<option value="100.100.136.246">100.100.136.246</option>
+									<option value="100.100.136.247">100.100.136.247</option>
+									<option value="100.100.136.248">100.100.136.248</option>
+									<option value="100.100.136.249">100.100.136.249</option>
+								</select>
+								<!-- select2 下拉选项可多选 end -->
+							</div>
+					    </div>
+						<script type="text/javascript">
+							// select2 下拉选项多选
+							$("#plugin3_demo4 .select2_box").select2({ 
+								placeholder: "请选择IP", 
+								allowClear: true, 
+								maximumSelectionSize: 100 
+							});
+						</script>
+               		</div>
+
+               		<div class="col-md-4 col-lg-4 col-xs-4">
+						<div class="bk-form-item mb20">
+					        <label class="bk-label pr15" style="width:80px;">灰度级别</label>
+					        <div class="bk-form-content" style="margin-left:80px;">
+					            <select name="" id="" class="bk-form-select" style="width:100%;" placeholder="请选择">
+					                <option value="">请选择</option>
+					                <option value="">用户</option>
+					                <option value="">部门</option>
+					            </select>
+					        </div>
+					    </div>
+					    <div class="bk-form-item mb20">
+					        <label class="bk-label pr15" style="width:80px;">服务</label>
+					        <div class="bk-form-content" style="margin-left:80px;">
+					            <select name="" id="" class="bk-form-select" style="width:100%;" placeholder="请选择">
+					                <option value="">请选择</option>
+					                <option value="">pipeline</option>
+					                <option value="">build</option>
+					                <option value="">init</option>
+					                <option value="">portal</option>
+					            </select>
+					        </div>
+					    </div>
+               		</div>
+
+               		<div class="col-md-4 col-lg-4 col-xs-4">
+					    <div class="bk-form-item mb20">
+					        <label class="bk-label pr15" style="width:80px;">灰度用户/部门</label>
+					        <div class="bk-form-content" style="margin-left:80px;">
+					            <input type="text" class="bk-form-input" placeholder="请输入关键字" style="width:100%;">
+					        </div>
+					    </div>
+					    <div class="bk-form-item mb20">
+					        <label class="bk-label pr15" style="width:80px;">微服务</label>
+					        <div class="bk-form-content" style="margin-left:80px;">
+					            <select name="" id="" class="bk-form-select" style="width:100%;" placeholder="请选择">
+					                <option value="">请选择</option>
+					                <option value="">cloudinitsvr</option>
+					                <option value="">cloudpipelinesvr</option>
+					                <option value="">cloudbuildsvr</option>
+					                <option value="">cloudreleasesvr</option>
+					            </select>
+					        </div>
+					    </div>
+					    <div class="bk-form-item">
+					        <label class="bk-label pr15" style="width:80px;"></label>
+					        <div class="bk-form-content tr">
+					            <button class="bk-button bk-success">提交</button>
+								<button class="bk-button bk-success">查询</button>
+					        </div>
+					    </div>
+               		</div>
+               </div>
+               </form>
+            </div>
+        </div>
+        <div class="bk-panel">
+            <div class="bk-panel-header p25" role="tab">
+                <div class="panel-title">灰度状态</div>
+            </div>
+            <div class="bk-panel-body p25">
+                <div id="chart_box" style="height:400px;">
+					<table class="table table-bordered table7_demo">
+						<thead>
+							<tr>
+								<th>编号</th>
+								<th>环境</th>
+								<th>服务</th>
+								<th>微服务</th>
+								<th>IP</th>
+								<th>工号/部门</th>
+								<th>部门转码</th>
+								<th>状态</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>dragon_product</td>
+								<td>pipeline</td>
+								<td>cloudpipelinesvr</td>
+								<td>100.100.134.156</td>
+								<td>研发工具解决方案部</td>
+								<td>%655%762%782</td>
+								<td>
+									<span class="label label-info">Active</span>
+								</td>
+								<td>
+									<button class="btn btn-xs btn-danger" title="取消">
+										<i class="glyphicon glyphicon-remove"></i>
+									</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					
+				</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--
+<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/echarts-2.0/echarts-all.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/index.js"></script>
+-->
+
+</body>
+</html>
