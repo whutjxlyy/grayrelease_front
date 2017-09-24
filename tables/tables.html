@@ -1,0 +1,453 @@
+<html>
+	<head>
+		<link href="https://magicbox.bkclouds.cc/static_api/v3/assets/bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://magicbox.bkclouds.cc/static_api/v3/bk/css/bk.css" rel="stylesheet">
+		<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+	</head>
+
+	<body>
+		
+		<div>
+
+
+	
+			<table class="table table-bordered table7_demo">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>名称</th>
+						<th>位置</th>
+						<th>日期</th>
+						<th>类型</th>
+						<th>状态</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Ravi Kumar</td>
+						<td>India</td>
+						<td>23/12/2012</td>
+						<td>Paid</td>
+						<td>
+							<span class="label label-info">Active</span>
+						</td>
+						<td>
+							<button class="btn btn-xs btn-success" title="激活">
+								<i class="glyphicon glyphicon-ok"></i>
+							</button>
+							<button class="btn btn-xs btn-warning" title="编辑">
+								<i class="glyphicon glyphicon-edit"></i>
+							</button>
+							<button class="btn btn-xs btn-danger" title="删除">
+								<i class="glyphicon glyphicon-remove"></i>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Ravi Kumar</td>
+						<td>India</td>
+						<td>23/12/2012</td>
+						<td>Paid</td>
+						<td>
+							<span class="label label-danger">Banned</span>
+						</td>
+						<td>
+							<button class="btn btn-xs btn-inverse" title="激活">
+								<i class="glyphicon glyphicon-ok"></i>
+							</button>
+							<button class="btn btn-xs btn-inverse" title="编辑">
+								<i class="glyphicon glyphicon-edit"></i>
+							</button>
+							<button class="btn btn-xs btn-inverse" title="删除">
+								<i class="glyphicon glyphicon-remove"></i>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Ravi Kumar</td>
+						<td>India</td>
+						<td>23/12/2012</td>
+						<td>Paid</td>
+						<td>
+							<span class="label label-success">Active</span>
+						</td>
+						<td>
+							<button class="btn btn-xs btn-success" title="激活">
+								<i class="glyphicon glyphicon-ok"></i>
+							</button>
+							<button class="btn btn-xs btn-warning" title="编辑">
+								<i class="glyphicon glyphicon-edit"></i>
+							</button>
+							<button class="btn btn-xs btn-danger" title="删除">
+								<i class="glyphicon glyphicon-remove"></i>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Ravi Kumar</td>
+						<td>India</td>
+						<td>23/12/2012</td>
+						<td>Paid</td>
+						<td>
+							<span class="label label-success">Active</span>
+						</td>
+						<td>
+							<button class="btn btn-xs btn-success" title="激活">
+								<i class="glyphicon glyphicon-ok"></i>
+							</button>
+							<button class="btn btn-xs btn-warning" title="编辑">
+								<i class="glyphicon glyphicon-edit"></i>
+							</button>
+							<button class="btn btn-xs btn-danger" title="删除">
+								<i class="glyphicon glyphicon-remove"></i>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>Ravi Kumar</td>
+						<td>India</td>
+						<td>23/12/2012</td>
+						<td>Paid</td>
+						<td>
+							<span class="label label-danger">Banned</span>
+						</td>
+						<td>
+							<button class="btn btn-xs btn-success" title="激活">
+								<i class="glyphicon glyphicon-ok"></i>
+							</button>
+							<button class="btn btn-xs btn-warning" title="编辑">
+								<i class="glyphicon glyphicon-edit"></i>
+							</button>
+							<button class="btn btn-xs btn-danger" title="删除">
+								<i class="glyphicon glyphicon-remove"></i>
+							</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+	
+		</div>
+		<br>
+		<br>
+		
+		<div>
+			<!--
+			如果没有引用以下文件，请去掉此注释
+			<link href="https://magicbox.bkclouds.cc/static_api/v3/assets/bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet">
+			<link href="https://magicbox.bkclouds.cc/static_api/v3/bk/css/bk.css" rel="stylesheet">
+			<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+			-->
+			<div class="panel panel-default pannel-overflow panel-tables table7_demo">
+				<div class="panel-heading"> <i class="fa fa-list-ul"></i> 变量列表
+				</div>
+				<div class="panel-body panel-search-body">
+					<a class="king-btn king-radius king-primary" title="添加变量">添加变量</a>
+					<a class="king-btn king-radius king-default" title="数据导入">数据导入</a>
+					<a class="king-btn king-radius king-default" title="数据导出">数据导出</a>
+				</div>
+				<div class="panel-content">
+					<table class="table table-header-bg table-hover mb0" id="table_demo2">
+						<thead>
+							<tr>
+								<th style="width: 25px">
+									<input type="checkbox" name="checkall" value="">
+								</th>
+								<th style="width: 100px">FuncID</th>
+								<th style="width:25%">key</th>
+								<th style="width:25%">作用域</th>
+								<th style="width:15%">值</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+
+							<tr>
+								<td>
+									<input type="checkbox" value="">
+								</td>
+								<td>1</td>
+								<td>TclsWorldID</td>
+								<td>s1.*.*.*</td>
+								<td>abc</td>
+								<td>
+									<button class="btn btn-xs btn-primary" title="编辑">
+										<i class="glyphicon glyphicon-edit"></i>
+									</button>
+									<button class="btn btn-xs btn-danger" title="删除">
+										<i class="glyphicon glyphicon-remove"></i>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" value="">
+								</td>
+								<td>1</td>
+								<td>TclsWorldID</td>
+								<td>s1.*.*.*</td>
+								<td>abc</td>
+								<td>
+									<button class="btn btn-xs btn-primary" title="编辑">
+										<i class="glyphicon glyphicon-edit"></i>
+									</button>
+									<button class="btn btn-xs btn-danger" title="删除">
+										<i class="glyphicon glyphicon-remove"></i>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" value="">
+								</td>
+								<td>1</td>
+								<td>TclsWorldID</td>
+								<td>s1.*.*.*</td>
+								<td>abc</td>
+								<td>
+									<button class="btn btn-xs btn-primary" title="编辑">
+										<i class="glyphicon glyphicon-edit"></i>
+									</button>
+									<button class="btn btn-xs btn-danger" title="删除">
+										<i class="glyphicon glyphicon-remove"></i>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" value="">
+								</td>
+								<td>1</td>
+								<td>TclsWorldID</td>
+								<td>s1.*.*.*</td>
+								<td>abc</td>
+								<td>
+									<button class="btn btn-xs btn-primary" title="编辑">
+										<i class="glyphicon glyphicon-edit"></i>
+									</button>
+									<button class="btn btn-xs btn-danger" title="删除">
+										<i class="glyphicon glyphicon-remove"></i>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" value="">
+								</td>
+								<td>1</td>
+								<td>TclsWorldID</td>
+								<td>s1.*.*.*</td>
+								<td>abc</td>
+								<td>
+									<button class="btn btn-xs btn-primary" title="编辑">
+										<i class="glyphicon glyphicon-edit"></i>
+									</button>
+									<button class="btn btn-xs btn-danger" title="删除">
+										<i class="glyphicon glyphicon-remove"></i>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" value="">
+								</td>
+								<td>1</td>
+								<td>TclsWorldID</td>
+								<td>s1.*.*.*</td>
+								<td>abc</td>
+								<td>
+									<button class="btn btn-xs btn-primary" title="编辑">
+										<i class="glyphicon glyphicon-edit"></i>
+									</button>
+									<button class="btn btn-xs btn-danger" title="删除">
+										<i class="glyphicon glyphicon-remove"></i>
+									</button>
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="6">
+									<div class="pull-left">
+										<a class="king-btn king-radius king-danger ml10" id="deleteAll" title="删除">删除</a>
+									</div>
+								</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+				<script type="text/javascript">
+					$('#table_demo2').find('input[name="checkall"]').click(function(){
+							var checked = $(this).prop('checked');
+							$('#table_demo2>tbody input').prop('checked', checked);
+						});
+						$('#table_demo2').find(':checkbox').on('click', function(){
+							if(!this.checked){
+								$('#table_demo2').find('input[name="checkall"]').prop('checked',false);
+							}
+						});
+						$('#table_demo2').find('.glyphicon-remove').parent('button').click(function(){
+							if(confirm('确定要删除？')){
+								$(this).closest('tr').remove();
+							}
+						});
+						$('#deleteAll').click(function(event) {
+							var records = $('#table_demo2>tbody input:checked').closest('tr');
+							if (!records.length){
+								alert('请选择要删除的记录！');
+								return false;
+							}
+							if(confirm('确定要删除？')){
+								records.remove();
+							}
+						});
+				</script>
+			</div>
+		
+		
+		
+		</div>
+		
+		<br>
+		<br>
+		<br>
+		<div>
+		<!--
+		如果没有引用以下文件，请去掉此注释
+		<link href="https://magicbox.bkclouds.cc/static_api/v3/assets/bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://magicbox.bkclouds.cc/static_api/v3/bk/css/bk.css" rel="stylesheet">
+		<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+		-->
+		<div class="panel panel-default table7_demo king-table7-demo3">
+			<div class="panel-heading">
+				模板列表
+			</div>
+			<div class="panel-body">
+				<div class="king-wrapper clearfix">
+					<form class="form-inline king-search-form king-no-bg pull-left">
+
+						<div class="form-group">
+							<div class="input-group king-input-group">
+								<input type="text" class="form-control pl30 king-form-control" placeholder="请输入关键字">
+								<span class="glyphicon glyphicon-search form-control-feedback king-form-control-feedback"></span>
+							</div>
+						</div>
+
+					</form>
+					<a href="javascript:void(0);" class="king-btn king-btn-new pull-right">
+							新建模板
+						</a>
+				</div>
+			</div>
+			<div>
+				<table class="table table-hover mb0">
+					<thead>
+						<tr class="active">
+							<th style="width:45px">ID</th>
+							<th style="min-width:150px">模板名称</th>
+							<th style="min-width:250px">更新时间</th>
+							<th style="width:100px">更新人</th>
+							<th style="width:565px">操作</th>
+						</tr>
+					</thead>
+					<tbody id="datas">
+						<tr style="display: table-row; opacity: 1;">
+							<td>1</td>
+							<td>lance</td>
+							<td>2016-05-27 14:33:00</td>
+							<td>gutinl</td>
+							<td>
+								<button class="king-btn king-default">预览</button>
+								<button class="king-btn king-default">权限管理</button>
+								<button class="king-btn king-danger">删除</button>
+							</td>
+						</tr>
+						<tr style="display: table-row; opacity: 1;">
+							<td>2</td>
+							<td>Elliott</td>
+							<td>2016-05-27 14:33:00</td>
+							<td>gutinl</td>
+							<td>
+								<button class="king-btn king-default">预览</button>
+								<button class="king-btn king-default">权限管理</button>
+								<button class="king-btn king-danger">删除</button>
+							</td>
+						</tr>
+						<tr style="display: table-row; opacity: 1;">
+							<td>3</td>
+							<td>Kevin</td>
+							<td>2016-05-27 14:33:00</td>
+							<td>gutinl</td>
+							<td>
+								<button class="king-btn king-default">预览</button>
+								<button class="king-btn king-default">权限管理</button>
+								<button class="king-btn king-danger">删除</button>
+							</td>
+						</tr>
+						<tr style="display: table-row; opacity: 1;">
+							<td>4</td>
+							<td>Todd</td>
+							<td>2016-05-27 14:33:00</td>
+							<td>gutinl</td>
+							<td>
+								<button class="king-btn king-default">预览</button>
+								<button class="king-btn king-default">权限管理</button>
+								<button class="king-btn king-danger">删除</button>
+							</td>
+						</tr>
+						<tr style="display: table-row; opacity: 1;">
+							<td>5</td>
+							<td>Jackson</td>
+							<td>2016-05-27 14:33:00</td>
+							<td>gutinl</td>
+							<td>
+								<button class="king-btn king-default">预览</button>
+								<button class="king-btn king-default">权限管理</button>
+								<button class="king-btn king-danger">删除</button>
+							</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="5">
+								<div class="pull-right king-page-box">
+									<p class="pull-left mt15 mr15">
+										共<span id="total">25</span>条记录，当前第<span id="cur_page">1</span>/<span id="total_page">5</span>页
+									</p>
+									<ul class="pagination pagination-sm pull-left mt10">
+										<li class="disabled">
+											<a href="javascript:;" aria-label="Previous">
+												<span aria-hidden="true">«</span>
+											</a>
+										</li>
+										<li class="active"><a href="javascript:;">1</a></li>
+										<li><a href="javascript:;">2</a></li>
+										<li><a href="javascript:;">3</a></li>
+										<li><a href="javascript:;">4</a></li>
+										<li><a href="javascript:;">5</a></li>
+										<li>
+											<a href="javascript:;" aria-label="Next">
+												<span aria-hidden="true">»</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+		
+		
+		
+		</div>
+		
+		
+	</body>
+</html>
