@@ -1,0 +1,330 @@
+<html>
+<head>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<link href="https://magicbox.bkclouds.cc/static_api/v3/assets/select2-3.5.2/select2.css" rel="stylesheet">
+<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/select2-3.5.2/select2.js"></script>
+<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/validate-1.14.0/js/jquery.validate.js"></script>
+
+<link href="https://magicbox.bkclouds.cc/static_api/v3/assets/bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://magicbox.bkclouds.cc/static_api/v3/bk/css/bk.css" rel="stylesheet">
+	<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+	<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+	<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/validate-1.14.0/js/jquery.validate.js"></script>
+	<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/jquery-validation-bootstrap-tooltip-0.10.2/jquery-validate.bootstrap-tooltip.js"></script>
+	<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/jquery-validation-bootstrap-tooltip-0.10.2/messages_zh.js"></script>
+</head>
+
+<body>
+<div>
+	<!--
+	如果没有引用以下文件，请去掉此注释
+	<link href="https://magicbox.bkclouds.cc/static_api/v3/assets/select2-3.5.2/select2.css" rel="stylesheet">
+	<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/select2-3.5.2/select2.js"></script>
+	-->
+	<div class="plugin3_demo" id="plugin3_demo1" style="display:inline-block;">
+		<!-- select2 静态 start -->
+		<select class="select2_box" style="width:300px;">
+			<option value=""></option>
+			<option value="">爬山</option>
+			<option value="">徒步</option>
+			<option value="">跑步</option>
+			<option value="">羽毛球</option>
+		</select>
+		<!-- select2 静态 end -->
+	</div>
+	<script type="text/javascript">
+		// select2 基础
+		$("#plugin3_demo1 .select2_box").select2({
+			placeholder: '请选择选项'
+		});
+	</script>
+</div>
+<div>
+	<!--
+	如果没有引用以下文件，请去掉此注释
+	<link href="https://magicbox.bkclouds.cc/static_api/v3/assets/select2-3.5.2/select2.css" rel="stylesheet">
+	<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/select2-3.5.2/select2.js"></script>
+	-->
+	<div class="plugin3_demo" id="plugin3_demo2" style="display:inline-block;">
+		<!-- select2 通过javascript start -->
+		<input type="hidden" class="select2_box" style="width:300px;">
+		<!-- select2 通过javascript end -->
+	</div>
+	<script type="text/javascript">
+		// select2 通过数组数据生成
+		var bkArr = [{ id: 0, text: '奥迪' }, { id: 1, text: '奔驰' }, { id: 2, text: '宝马' }] ;
+		$("#plugin3_demo2 .select2_box").select2({ data: bkArr });
+	</script>
+</div>
+<div>
+	<!--
+	如果没有引用以下文件，请去掉此注释
+	<link href="https://magicbox.bkclouds.cc/static_api/v3/assets/select2-3.5.2/select2.css" rel="stylesheet">
+	<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/select2-3.5.2/select2.js"></script>
+	-->
+	<div class="plugin3_demo" id="plugin3_demo3" style="display:inline-block;">
+		<!-- select2 通过ajax start -->
+		<input type="hidden" class="select2_box" style="width:300px;">
+		<!-- select2 通过ajax end -->
+	</div>
+	<script type="text/javascript">
+		// select2 通过ajax数据生成
+		// 数据格式：{"results":[{ "id": 0, "text": "奥迪" }, { "id": 1, "text": "奔驰" }, { "id": 2, "text": "宝马" }]}
+		// alert(2)
+		$("#plugin3_demo3 .select2_box").select2({
+			ajax: {
+				url: "select2.json",
+				cache: false,
+				//对返回的数据进行处理
+				results: function(data){
+					return data;
+				}
+			}
+
+		});
+	</script>
+</div>
+<div>
+	<!--
+	如果没有引用以下文件，请去掉此注释
+	<link href="https://magicbox.bkclouds.cc/static_api/v3/assets/select2-3.5.2/select2.css" rel="stylesheet">
+	<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/select2-3.5.2/select2.js"></script>
+	-->
+	<div class="plugin3_demo" id="plugin3_demo4" style="display:inline-block;">
+		<!-- select2 下拉选项可多选 start -->
+		<select multiple="true" class="select2_box" style="width:300px;">
+			<optgroup label="河北省">
+				<option value="石家庄">石家庄</option>
+				<option value="保定">保定</option>
+			</optgroup>
+			<optgroup label="河南省">
+				<option value="郑州">郑州</option>
+				<option value="驻马店">驻马店</option>
+			</optgroup>
+		</select>
+		<!-- select2 下拉选项可多选 end -->
+	</div>
+	<script type="text/javascript">
+		// select2 下拉选项多选
+		$("#plugin3_demo4 .select2_box").select2({ 
+			placeholder: "选择所在省市", 
+			allowClear: true, 
+			maximumSelectionSize: 3 
+		});
+	</script>
+</div>
+<div>
+	<!--
+	如果没有引用以下文件，请去掉此注释
+	<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/validate-1.14.0/js/jquery.validate.js"></script>
+	-->
+	<form class="form-horizontal" action="index.html" id="form4_demo1">
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="validation_name">用户名</label>
+			<div class="col-sm-7">
+				<input class="form-control" id="validation_name" name="validation_name" placeholder="用户名" type="text">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="validation_email">邮箱</label>
+			<div class="col-sm-7">
+				<input class="form-control" id="validation_email" name="validation_email" placeholder="邮箱" type="text">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="validation_phone">手机号</label>
+			<div class="col-sm-7">
+				<input class="form-control" id="validation_phone" name="validation_phone" placeholder="手机号" type="text" maxlength="11">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="validation_password">密码</label>
+			<div class="col-sm-7">
+				<input class="form-control" id="validation_password" name="validation_password" placeholder="密码" type="password">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="validation_password_confirm">确认密码</label>
+			<div class="col-sm-7">
+				<input class="form-control" id="validation_password_confirm" name="validation_password_confirm" placeholder="确认密码" type="password">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="validation_date">出生年月</label>
+			<div class="col-sm-7">
+				<input class="form-control" data-mask="9999-99-99" id="validation_date" name="validation_date" placeholder="YYYY-MM-DD" type="text">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="validation_select">下拉选项</label>
+			<div class="col-sm-7">
+				<select class="form-control" id="validation_select" name="validation_select">
+					<option></option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="validation_select"></label>
+			<div class="col-sm-7">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" checked="true">已阅读并同意相关条款</label>
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="validation_select"></label>
+			<div class="col-sm-7">
+				<button class="king-btn king-info" type="submit" id="btn-validate">提交</button>
+			</div>
+		</div>
+	</form>
+	<script type="text/javascript">
+		/*添加手机号验证方法*/
+		$.validator.addMethod("phone",function(value, element, param){  
+			if(/^1\d{10}$/.test(value)){
+				 return true;
+			}
+		});
+		 /* 表单验证 */
+		$('#form4_demo1').validate({
+			errorElement: 'span',
+			errorClass: 'text-danger',
+			rules: {
+				validation_name: {
+					required: true,
+					minlength: 2
+				},
+				 validation_phone: {
+					required: true,
+					phone: true
+				},
+				validation_email: {
+					required: true,
+					email: true
+				},
+				validation_password: {
+					required: true,
+					minlength: 6
+				},
+				validation_password_confirm: {
+					required: true,
+					minlength: 6,
+					equalTo: '#validation_password'
+				},
+				validation_date: {
+					dateISO: true,
+					required: true
+				},
+				validation_select: {
+					required: true
+				}
+			},
+			messages: {
+				validation_name: "请输入姓名(至少两位)",
+				validation_phone : "手机号必须是11数字，以1开头",
+				validation_email: "请输入正确邮箱",
+				validation_password: "密码数不能少于6位",
+				validation_password_confirm: "两次密码不一致",
+				validation_date: "日期格式：2000-01-01",
+				validation_select:"必须选择"
+			}
+		});
+	</script>
+</div>
+<div>
+	<!--
+	如果没有引用以下文件，请去掉此注释
+	<link href="https://magicbox.bkclouds.cc/static_api/v3/assets/bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://magicbox.bkclouds.cc/static_api/v3/bk/css/bk.css" rel="stylesheet">
+	<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+	<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+	<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/validate-1.14.0/js/jquery.validate.js"></script>
+	<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/jquery-validation-bootstrap-tooltip-0.10.2/jquery-validate.bootstrap-tooltip.js"></script>
+	<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/jquery-validation-bootstrap-tooltip-0.10.2/messages_zh.js"></script>
+	-->
+	<form class="form-horizontal" action="index.html" id="form5_demo1">
+		<p class="magic-desc mb20"><span class="strong">用法一：通过data属性</span></p>
+		<div class="form-group">
+			<label class="control-label col-sm-2">用户名</label>
+			<div class="col-sm-7">
+				<input class="form-control" type="text" name="example1" required="">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2">数量</label>
+			<div class="col-sm-7">
+				<input class="form-control" type="number" name="example2" required="">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2">邮箱</label>
+			<div class="col-sm-7">
+				<input type="text" class="form-control required email" data-trigger="focus" name="example3">
+			</div>
+		</div>
+		<hr>
+		<p class="magic-desc mb20"><span class="strong">用法二：通过Javascript</span></p>
+		<div class="form-group">
+			<label class="control-label col-sm-2">手机号码</label>
+			<div class="col-sm-7">
+				<input class="form-control" type="text" name="validation_phone">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2">邮箱</label>
+			<div class="col-sm-7">
+				<input class="form-control" type="text" name="example4">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2"></label>
+			<div class="col-sm-7">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="example5">已阅读并同意相关条款
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2"></label>
+			<div class="col-sm-7">
+				<button class="king-btn king-info" type="submit" id="btn-validate">提交</button>
+			</div>
+		</div>
+	</form>
+	<script type="text/javascript">
+		/*添加手机号验证方法*/
+		$.validator.addMethod("phone",function(value, element, param){  
+			if(/^1\d{10}$/.test(value)){
+				 return true;
+			}
+		});
+		$("#form5_demo1").validate({
+			rules: {
+				validation_phone: {required: true,phone: true},
+				example4: {email:true, required: true},
+				example5: {required: true}
+			},
+			messages: {
+				example5: "<h5 class='text-danger'>请仔细阅读条款并勾选</h5>",
+				validation_phone: "必须是以1开头的11位数"
+			},
+			tooltip_options: {
+				example4: {trigger:'focus'},
+				example5: {placement:'right',html:true}
+			}
+		});
+	</script>
+
+</div>
+
+
+
+</body>
+
+</html>
